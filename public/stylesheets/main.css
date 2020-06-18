@@ -1,0 +1,14 @@
+body {
+  background-color: honeydew;
+}
+.well {
+  background-color: lightgray;
+}
+
+.comment {
+  padding: 5px 20px;
+}
+
+.delete-form {
+  display: inline;
+}

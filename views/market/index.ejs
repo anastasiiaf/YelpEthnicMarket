@@ -1,0 +1,37 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+  <header class="jumbotron" style="background-color: #9acd32;">
+    <div class="container">
+      <h1>Welcome To Your Local Ethnic Market!</h1>
+      <p>View our shops in Oslo</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="/market/new">Add new shop</a>
+      </p>
+    </div>
+  </header>
+
+  <div class="row" style="display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12">
+      <h3>Our Most Popular Shops</h3>
+    </div>
+    <%market.forEach(function(shop){%>
+    <div class="col-lg-4 col-md-6 col-sm-9">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="<%= shop.image %>" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title"><%= shop.name %></h5>
+          <p class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti hic magnam non vitae!
+            Commodi, dolor.
+          </p>
+          <a href="/market/<%= shop._id %>" class="btn btn-primary">More info</a>
+        </div>
+      </div>
+    </div>
+    <%});%>
+  </div>
+
+  <br />
+  <%- include("../partials/footer") %>
+</div>
