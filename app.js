@@ -17,10 +17,31 @@ var marketRoutes = require('./routes/market'),
   indexRoutes = require('./routes/index');
 
 mongoose.set('useNewUrlParser', true);
-mongoose.set('useUnifiedTopology', true);
-mongoose.connect(
-  'mongodb://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
-); // check how to encode password!!!
+mongoose.set('useUnifiedTopology', true); // check how to encode password!!!
+/* mongoose
+  .connect(
+    'mongodb+srv://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
+    {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+    },
+  )
+  .then(() => {
+    console.log('Connected to DB');
+  })
+  .catch((err) => {
+    console.log('error', err.message);
+  });  */ mongoose.connect(
+  'mongodb+srv://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
+  { useNewUrlParser: true },
+);
+const conn = mongoose.connection;
+mongoose.connection.once('open', () => {
+  console.log('MongoDB Connected');
+});
+mongoose.connection.on('error', (err) => {
+  console.log('MongoDB connection error: ', err);
+});
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
