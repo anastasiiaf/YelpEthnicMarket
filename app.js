@@ -31,7 +31,9 @@ mongoose.set('useUnifiedTopology', true); // check how to encode password!!!
   })
   .catch((err) => {
     console.log('error', err.message);
-  });  */ mongoose.connect(
+  });  */
+
+mongoose.connect(
   'mongodb+srv://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
   { useNewUrlParser: true },
 );
