@@ -35,15 +35,7 @@ mongoose.set('useUnifiedTopology', true); // check how to encode password!!!
 
 mongoose.connect(
   'mongodb+srv://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
-  { useNewUrlParser: true },
 );
-const conn = mongoose.connection;
-mongoose.connection.once('open', () => {
-  console.log('MongoDB Connected');
-});
-mongoose.connection.on('error', (err) => {
-  console.log('MongoDB connection error: ', err);
-});
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
