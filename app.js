@@ -19,7 +19,7 @@ var marketRoutes = require('./routes/market'),
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
 mongoose.connect(
-  'mongodb+srv://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
+  'mongodb://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
 ); // check how to encode password!!!
 
 app.set('view engine', 'ejs');
