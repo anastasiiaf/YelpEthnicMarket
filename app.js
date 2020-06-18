@@ -18,9 +18,6 @@ var marketRoutes = require('./routes/market'),
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
-/* mongoose.connect(
-  'mongodb+srv://Anastasiia:250591Rada@cluster0-v3ypj.mongodb.net/YelpEthnicMarket?retryWrites=true&w=majority',
-); */
 mongoose.connect(process.env.DATABASEURL);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
