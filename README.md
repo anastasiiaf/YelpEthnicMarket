@@ -52,7 +52,9 @@ YelpEthnicMarket is a clone of YelpCamp project (The Web Developer Bootcamp @ Ud
 
 - locate shops on Google map
 - add possibility to have several pictures per shop post - to have a carousell instead of one image only
-- add shop contact info
+- add shop contact info, opening hours, etc.
+- add user rating to shops
+- add answer to comment with a new comment (nested)
 - add city and type (food, clothes) to each shop
 - add filter/search to select different types of shops
 - add search field to select shops across Norway
