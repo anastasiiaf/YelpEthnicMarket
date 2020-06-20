@@ -18,30 +18,31 @@ YelpEthnicMarket is a clone of YelpCamp project (The Web Developer Bootcamp @ Ud
 
 ## Features
 
-Sign in
+**Sign in**
 
 - user can register with login and password (data saved in MongoDB)
 
-Log in
+**Log in**
 
 - existing user can log in with login and password
 
-Shop
+**Shop**
 
 - only registered user can create new shop
 - only author of the shop post can edit it later
 - new shop post has author stamp below description
 
-Comment
+**Comment**
 
 - only registered user can add comment under any shop
 - only author of the comment can edit it later
 - each comment has a timestamp (updated if comment was edited)
 
-Other
+**Other**
 
 - Authentication and Authorization checks
 - helpful errors with Flash js
+- landing page background animation (CSS)
 
 ## Future features
 
@@ -50,18 +51,19 @@ Other
 - add shop contact info
 - add city and type (food, clothes) to each shop
 - add filter/search to select different types of shops
-- add search field to select shops across Norway.
+- add search field to select shops across Norway
+- UI styling
 
 ## Dependencies
 
-mongoose
-express
-ejs
-body-parser
-express-session
-method-override
-passport
-passport-local
-passport-local-mongoose
-connect-flash
-moment
+* mongoose
+* express
+* ejs
+* body-parser
+* express-session
+* method-override
+* passport
+* passport-local
+* passport-local-mongoose
+* connect-flash
+* moment
