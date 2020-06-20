@@ -48,8 +48,9 @@ Other
 - locate shops on Google map
 - add possibility to have several pictures per shop post - to have a carousell instead of one image only
 - add shop contact info
-- add filter/search to select different types of shops (food: asian, slavic, etc; clothes, etc.)
-- add search field to select shops not only in Oslo, but in Norway.
+- add city and type (food, clothes) to each shop
+- add filter/search to select different types of shops
+- add search field to select shops across Norway.
 
 ## Dependencies
 
